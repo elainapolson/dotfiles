@@ -1,0 +1,106 @@
+# directories
+alias better-core="cd ~/src/better-core"
+alias retail="cd ~/src/better-core/retail"
+alias retail_core="cd ~/src/better-core/retail_core"
+alias broker_dealer="cd ~/src/better-core/broker_dealer"
+alias broker_dealer_core="cd ~/src/better-core/broker_dealer_core"
+alias style-closet="cd ~/src/style-closet"
+alias bootstrap="cd ~/.bootstrap"
+
+# setup
+alias be="bundle exec"
+alias bim="bundle install; bundle exec rake db:migrate"
+
+# github
+alias gA='git add --all :/'
+alias ga='git add'
+alias gca='git commit --amend'
+alias gb='git branch'
+alias gbd='git branch -d'
+alias gbl='git branch -v -a'
+alias gd='git diff'
+alias gdc='git diff --cached'
+alias gdd='git difftool'
+alias gdw='git diff -w'
+alias gf='git fetch'
+alias gfmom='git fetch origin && git merge origin/master'
+alias gfrb='git fetch origin && git rebase origin/master'
+alias gfrbi='gfrb --interactive'
+alias gfa='git fetch --all'
+alias gg='git grep'
+alias gh='git stash'
+alias ghl='git stash list'
+alias ghp='git stash pop'
+alias ghs='git stash save'
+alias ghsp='git stash save --patch'
+alias ghw='git stash show -p'
+alias gm='git merge'
+alias gmt='git mergetool'
+alias gmom='git merge origin/master'
+alias gp='git push'
+alias gpo='git push origin'
+alias gs='git show -p'
+alias gup='git up'
+alias guns='git unstage'
+alias gvc='vim `git diff --name-only --diff-filter=U`'
+alias gvm='vim `git diff --name-only --diff-filter=M`'
+alias gco="git checkout"
+alias gs="git status"
+alias gp="git push"
+alias gc="git commit"
+alias gri="git rebase -i master"
+alias grc="git rebase --continue"
+alias grm="git rebase master"
+alias gprune="git fetch --prune --all"
+alias compare="source ~/.zshrc; hub compare master...$(git rev-parse --symbolic-full-name --abbrev-ref HEAD)"
+alias gmstage='git checkout master && git pull && git checkout stage && git pull && git merge master'
+
+alias VU='~/.vim/update.sh'
+alias ZR='echo "Restarting zsh..." ; exec zsh -l'
+alias ZL='vi ~/.zshlocal ~/.zshrc ; ZR'
+alias ZshRehash='. ~/.zshrc'
+alias agg='_agg () { rg --group $@ | less }; _agg'
+alias aag='agg'
+alias bc='bc -l'
+alias dotenv="eval \$(egrep -v '^#' .env | xargs)"
+alias f='fg'
+alias f1="awk '{print \$1}'"
+alias f2="awk '{print \$2}'"
+alias f2k9='f2k -9'
+alias f2k='f2 | xargs -t kill'
+alias k='tree -h'
+alias l="ls -lh"
+alias ll="l -a"
+alias lt='ls -lt'
+alias ltr='ls -ltr'
+
+# vim
+alias vimnerd='vim +"NERDTree $1"'
+
+# specs
+alias feature="FEATURES=1 rspec"
+alias rspec="bundle exec rspec"
+
+# rails
+alias rc="sopsorific run 'bundle exec rails c'"
+
+# nginx
+alias nginx="sudo brew services restart nginx"
+
+# zsh
+alias scripts="vim ~/.oh-my-zsh/custom/scripts.zsh"
+alias zshrc="vim ~/.zshrc"
+
+alias vimrc="vim ~/.vimrc"
+
+alias reload="source ~/.zshrc"
+
+# logs
+alias plog="powder applog"
+alias devlogs="tail -f log/development.log"
+
+# rake
+alias db_retail="rake app:retail:test:prepare app:bettermentdb:test:prepare"
+alias db_retail_core="rake retail:test:prepare bettermentdb:test:prepare"
+alias erblint="bundle exec rake erblint"
+
