@@ -1,13 +1,3 @@
-# directories
-alias better-core="cd ~/src/better-core"
-alias retail="cd ~/src/better-core/retail"
-alias retail_core="cd ~/src/better-core/retail_core"
-alias broker_dealer="cd ~/src/better-core/broker_dealer"
-alias broker_dealer_core="cd ~/src/better-core/broker_dealer_core"
-alias style-closet="cd ~/src/style-closet"
-alias bootstrap="cd ~/.bootstrap"
-
-# setup
 alias be="bundle exec"
 alias bim="bundle install; bundle exec rake db:migrate"
 
@@ -74,33 +64,11 @@ alias ll="l -a"
 alias lt='ls -lt'
 alias ltr='ls -ltr'
 
-# vim
-alias vimnerd='vim +"NERDTree $1"'
-
 # specs
-alias feature="FEATURES=1 rspec"
 alias rspec="bundle exec rspec"
 
-# rails
-alias rc="sopsorific run 'bundle exec rails c'"
-
-# nginx
-alias nginx="sudo brew services restart nginx"
-
-# zsh
+# config files
 alias scripts="vim ~/.oh-my-zsh/custom/scripts.zsh"
 alias zshrc="vim ~/.zshrc"
-
 alias vimrc="vim ~/.vimrc"
-
 alias reload="source ~/.zshrc"
-
-# logs
-alias plog="powder applog"
-alias devlogs="tail -f log/development.log"
-
-# rake
-alias db_retail="rake app:retail:test:prepare app:bettermentdb:test:prepare"
-alias db_retail_core="rake retail:test:prepare bettermentdb:test:prepare"
-alias erblint="bundle exec rake erblint"
-
